@@ -74,6 +74,27 @@
     text-align: left;
   }
   
+  .image-popup {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    transform: scale(0.9);
+    opacity: 0;
+    z-index: 1000;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+/* Visible state for the popup */
+.image-popup.visible {
+  transform: scale(1);
+  opacity: 1;
+}
+  
   @media (max-width: 600px) {
     .header {
       flex-direction: column;

@@ -18,6 +18,8 @@
     color: #333;
     padding: 20px;
   }
+
+  
   
   .container {
     max-width: 800px;
@@ -35,20 +37,20 @@
   }
   
   .opening-p {
-    font-size: 16px;
+    font-size: 14px;
     color: #555;
     flex: 1 1 70%;
     margin-bottom: 10px;
   }
   
   .timestamp {
-    font-size: 16px;
+    font-size: 14px;
     color: #909090;
     flex: 1 1 20%; 
   }
   
   .work-section p {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 20px;
     color: #555;
   }

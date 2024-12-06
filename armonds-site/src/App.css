@@ -1,38 +1,104 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 16px;
+}
+
+/* text hightlight color */
+::selection {
+  color: white;
+  background: black;
+}
+
 .App {
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  margin-bottom: 80px;
+  margin-top: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.opening-p {
+  font-size: 16px;
+  color: #555;
+  flex: 1 1 70%;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name {
+  color: #333;
+}
+
+.name:hover {
+  cursor: crosshair;
+}
+
+.timestamp {
+  font-size: 16px;
+  color: #909090;
+  flex: 1 1 20%;
+  align-items: flex-start;
+}
+
+.work-section {
+  margin-top: 20px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.work-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.work-item:hover {
+  cursor: crosshair;
+}
+
+.hover-image {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 1000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 500;
+  color: #909090;
+  margin-bottom: 5px;
+}
+
+.role {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 10px;
 }
